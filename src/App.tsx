@@ -92,7 +92,7 @@ const teams = {
 
 function App() {
   const [darkMode] = useState(true);
-  const [activeTeam, setActiveTeam] = useState<keyof typeof teams>('backend');
+  const [activeTeam, setActiveTeam] = useState<keyof typeof teams>('frontend');
 
  
     
