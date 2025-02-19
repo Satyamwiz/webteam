@@ -28,7 +28,7 @@ const teams = {
       {
         name: "Soham Deshpande",
         role: "Backend Developer",
-        photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+        photo: "/soham.jpg",
         description: "Lead backend architect specializing in scalable systems"
       },
       {
