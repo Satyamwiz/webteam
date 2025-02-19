@@ -17,13 +17,13 @@ const teams = {
         name: "Siddhant",
         role: "Backend Developer",
         photo: "/sid.jpg",
-        description: "Cloud infrastructure and DevOps specialist"
+        description: "Rag devlopment and performance tuning specialist"
       },
       {
         name: "Darshan",
         role: "Backend Developer",
         photo: "/dar.jpg",
-        description: "Microservices and distributed systems expert"
+        description: "Database optimization and security specialist"
       },
       {
         name: "Soham Deshpande",
@@ -35,7 +35,7 @@ const teams = {
         name: "Atharva",
         role: "Backend Developer",
         photo: "/ath.jpg",
-        description: "Database optimization and security specialist"
+        description: "Microservice expert and cloud infrastructure specialist"
       },
       {
         name: "Tanay",
@@ -54,12 +54,12 @@ const teams = {
         name: "Satyam",
         role: "Frontend Developer",
         photo: "/satyam.jpg",
-        description: "React performance optimization expert"
+        description: "Front-END"
       },
       {
         name: "Shravani",
         role: "Frontend Developer",
-        photo: "/shr.jpg",
+        photo: "/shra.jpeg",
         description: "Component architecture and state management specialist"
       }
     ]
