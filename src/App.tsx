@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sun, Moon, Code2, Palette, Layout } from 'lucide-react';
+import { Code2, Palette, Layout } from 'lucide-react';
 
 type TeamMember = {
   name: string;
@@ -14,77 +14,84 @@ const teams = {
     icon: <Code2 className="w-6 h-6" />,
     members: [
       {
-        name: "Siddhant",
+        name: "Shashwat",
         role: "Backend Developer",
-        photo: "/sid.jpg",
-        description: "Rag devlopment and performance tuning specialist"
+        photo: "/Shashwat.jpg",
+        description: "Backend systems and core logic"
+      },
+      {
+        name: "Yash",
+        role: "Backend Developer",
+        photo: "/Yash.jpg",
+        description: "API and service development"
       },
       {
         name: "Darshan",
         role: "Backend Developer",
-        photo: "/dar.jpg",
-        description: "Database optimization and security specialist"
+        photo: "/Darshan.jpg",
+        description: "Database optimization and security"
       },
       {
-        name: "Soham Deshpande",
+        name: "Arjun",
         role: "Backend Developer",
-        photo: "/soham.jpg",
-        description: "Lead backend architect specializing in scalable systems"
-      },
-      {
-        name: "Atharva",
-        role: "Backend Developer",
-        photo: "/ath.jpg",
-        description: "Microservice expert and cloud infrastructure specialist"
-      },
-      {
-        name: "Tanay",
-        role: "Backend Developer",
-        photo: "/tanay.jpeg",
-        description: "API architecture and performance expert"
-      },
-     
+        photo: "/Arjun.jpg",
+        description: "Backend infrastructure and integrations"
+      }
     ]
   },
+
   frontend: {
     title: "Frontend Team",
     icon: <Layout className="w-6 h-6" />,
     members: [
       {
-        name: "Satyam",
+        name: "Siddhesh",
         role: "Frontend Developer",
-        photo: "/satyam.jpg",
-        description: "Front-END"
+        photo: "/Siddhesh.jpg",
+        description: "UI development and responsiveness"
       },
       {
-        name: "Shravani",
+        name: "Sumukh",
         role: "Frontend Developer",
-        photo: "/shra.jpeg",
-        description: "Component architecture and state management specialist"
+        photo: "/Sumukh.jpg",
+        description: "Frontend logic and component structure"
       }
     ]
   },
-  design: {
-    title: "Design Team",
+
+  legacy: {
+    title: "Legacy Code Team",
     icon: <Palette className="w-6 h-6" />,
     members: [
       {
-        name: "Deepika",
-        role: "UI/UX Designer",
-        photo: "./dpika.jpg",
-        description: "Lead designer focusing on user experience"
+        name: "Soham",
+        role: "Legacy Systems Engineer",
+        photo: "/Soham.jpg",
+        description: "Maintaining and refactoring legacy code"
       },
       {
-        name: "Mokshada",
-        role: "UI/UX Designer",
-        photo: "./mok.jpg",
-        description: "Visual design and branding specialist"
+        name: "Atharva",
+        role: "Legacy Systems Engineer",
+        photo: "/Atharva.jpg",
+        description: "Backward compatibility and system stability"
       },
       {
-        name: "Shraddha",
-        role: "UI/UX Designer",
-        photo: "./srada.jpg",
-        description: "Interaction design and prototyping expert"
+        name: "Darshan",
+        role: "Legacy Systems Engineer",
+        photo: "/Darshan.jpg",
+        description: "Legacy database and logic handling"
+      },
+      {
+        name: "Siddhant",
+        role: "Legacy Systems Engineer",
+        photo: "/Siddhant.jpg",
+        description: "Optimizing and documenting old systems"
+      },
+      {
+        name: "Satyam",
+        role: "Legacy Systems Engineer",
+        photo: "/Satyam.jpg",
+        description: "Debugging and maintaining legacy flows"
       }
     ]
   }
@@ -92,24 +99,23 @@ const teams = {
 
 function App() {
   const [darkMode] = useState(true);
-  const [activeTeam, setActiveTeam] = useState<keyof typeof teams>('frontend');
-
- 
-    
-  
+  const [activeTeam, setActiveTeam] =
+    useState<keyof typeof teams>('frontend');
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
+    <div
+      className={`min-h-screen transition-colors duration-300 ${
+        darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'
+      }`}
+    >
       {/* Header */}
-      <header className={`fixed w-full ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg z-50`}>
+      <header
+        className={`fixed w-full ${
+          darkMode ? 'bg-gray-800' : 'bg-white'
+        } shadow-lg z-50`}
+      >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">Wall Street Web Team</h1>
-          {/* <button
-            onClick={toggleDarkMode}
-            className={`p-2 rounded-full ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'}`}
-          >
-            {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
-          </button> */}
         </div>
       </header>
 
@@ -122,9 +128,15 @@ function App() {
               key={key}
               onClick={() => setActiveTeam(key as keyof typeof teams)}
               className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300
-                ${activeTeam === key 
-                  ? (darkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white')
-                  : (darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-100')}
+                ${
+                  activeTeam === key
+                    ? darkMode
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-blue-500 text-white'
+                    : darkMode
+                    ? 'bg-gray-800 hover:bg-gray-700'
+                    : 'bg-white hover:bg-gray-100'
+                }
                 shadow-md`}
             >
               {team.icon}
@@ -135,23 +147,32 @@ function App() {
 
         {/* Team Members Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teams[activeTeam].members.map((member: TeamMember) => (
+          {teams[activeTeam].members.map((member) => (
             <div
               key={member.name}
-              className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105
-                ${darkMode ? 'bg-gray-800' : 'bg-white'}`}
+              className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              }`}
             >
               <img
                 src={member.photo}
                 alt={member.name}
-                className="w-full  object-cover"
+                className="w-full object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className={`text-sm mb-3 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                <p
+                  className={`text-sm mb-3 ${
+                    darkMode ? 'text-blue-400' : 'text-blue-600'
+                  }`}
+                >
                   {member.role}
                 </p>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                <p
+                  className={`text-sm ${
+                    darkMode ? 'text-gray-400' : 'text-gray-600'
+                  }`}
+                >
                   {member.description}
                 </p>
               </div>
