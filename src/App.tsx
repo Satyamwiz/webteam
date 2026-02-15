@@ -103,7 +103,7 @@ const teams = {
       {
         name: "Darshan",
         role: "Legacy Systems Engineer",
-        photo: "/Darshan.jpg",
+        photo: "/Darshann.jpg",
         description: ""
       },
       {
