@@ -36,6 +36,18 @@ const teams = {
         role: "Backend Developer",
         photo: "/Arjun.jpg",
         description: "Backend infrastructure and integrations"
+      },
+      {
+        name: "Satyam",
+        role: "Backend Developer",
+        photo: "/Satyam.jpg",
+        description: "Backend infrastructure and integrations"
+      },
+      {
+        name: "Siddhant",
+        role: "Backend Developer",
+        photo: "/Siddhant.jpg",
+        description: "Backend infrastructure and integrations"
       }
     ]
   },
@@ -69,6 +81,13 @@ const teams = {
         photo: "/Soham.jpg",
         description: "Maintaining and refactoring legacy code"
       },
+      {
+        name: "Tanay",
+        role: "Legacy Systems Engineer",
+        photo: "/Tanay.jpg",
+        description: "Maintaining and refactoring legacy code"
+      },
+
       {
         name: "Atharva",
         role: "Legacy Systems Engineer",
