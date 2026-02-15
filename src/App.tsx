@@ -28,7 +28,7 @@ const teams = {
       {
         name: "Darshan",
         role: "Backend Developer",
-        photo: "/Darshan.jpg",
+        photo: "/Darshann.jpg",
         description: ""
       },
       {
