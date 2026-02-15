@@ -17,37 +17,43 @@ const teams = {
         name: "Shashwat",
         role: "Backend Developer",
         photo: "/Shashwat.jpg",
-        description: "Backend systems and core logic"
+        description: ""
       },
       {
         name: "Yash",
         role: "Backend Developer",
         photo: "/Yash.jpg",
-        description: "API and service development"
+        description: ""
       },
       {
         name: "Darshan",
         role: "Backend Developer",
         photo: "/Darshan.jpg",
-        description: "Database optimization and security"
+        description: ""
       },
       {
         name: "Arjun",
         role: "Backend Developer",
         photo: "/Arjun.jpg",
-        description: "Backend infrastructure and integrations"
+        description: ""
       },
       {
         name: "Satyam",
         role: "Backend Developer",
         photo: "/Satyam.jpg",
-        description: "Backend infrastructure and integrations"
+        description: ""
       },
       {
         name: "Siddhant",
         role: "Backend Developer",
         photo: "/Siddhant.jpg",
-        description: "Backend infrastructure and integrations"
+        description: ""
+      },
+      {
+        name: "Ashwin",
+        role: "Backend Developer",
+        photo: "/Ashwin.jpg",
+        description: ""
       }
     ]
   },
@@ -60,13 +66,13 @@ const teams = {
         name: "Siddhesh",
         role: "Frontend Developer",
         photo: "/Siddhesh.jpg",
-        description: "UI development and responsiveness"
+        description: ""
       },
       {
         name: "Sumukh",
         role: "Frontend Developer",
         photo: "/Sumukh.jpg",
-        description: "Frontend logic and component structure"
+        description: ""
       }
     ]
   },
@@ -79,38 +85,38 @@ const teams = {
         name: "Soham",
         role: "Legacy Systems Engineer",
         photo: "/Soham.jpg",
-        description: "Maintaining and refactoring legacy code"
+        description: ""
       },
       {
         name: "Tanay",
         role: "Legacy Systems Engineer",
         photo: "/Tanay.jpg",
-        description: "Maintaining and refactoring legacy code"
+        description: ""
       },
 
       {
         name: "Atharva",
         role: "Legacy Systems Engineer",
         photo: "/Atharva.jpg",
-        description: "Backward compatibility and system stability"
+        description: ""
       },
       {
         name: "Darshan",
         role: "Legacy Systems Engineer",
         photo: "/Darshan.jpg",
-        description: "Legacy database and logic handling"
+        description: ""
       },
       {
         name: "Siddhant",
         role: "Legacy Systems Engineer",
         photo: "/Siddhant.jpg",
-        description: "Optimizing and documenting old systems"
+        description: ""
       },
       {
         name: "Satyam",
         role: "Legacy Systems Engineer",
         photo: "/Satyam.jpg",
-        description: "Debugging and maintaining legacy flows"
+        description: ""
       }
     ]
   }
